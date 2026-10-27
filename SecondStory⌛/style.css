@@ -1,0 +1,89 @@
+body{
+    background-image: url(background.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#clock{
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(5px);
+    background-color: hsl(0,0%,100%,0.1);
+    width: 100%;
+}
+
+#stopWatchHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#myH1{
+    font-size: 4rem;
+    font-family: monospace;
+    color: rgba(255, 255, 255, 0.909);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 5px solid;
+    border-radius: 50px;
+    background-color: white;
+}
+
+#display{
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: hsl(0,0%,30%);
+    text-shadow: 2px 2px 2px hsla(0,0%,0%,0.75);
+    margin-bottom: 25px;
+}
+
+#controls button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+#startbtn{
+    background-color: hsl(115,100%,40%);
+}
+#startbtn:hover{
+    background-color: hsl(115,100%,30%);
+}
+
+#stopbtn{
+    background-color: hsl(10,90%,50%);
+}
+#stopbtn:hover{
+    background-color: hsl(10,90%,40%);
+}
+
+#resetbtn{
+    background-color: hsl(205,90%,60%);
+}
+#resetbtn:hover{
+    background-color: hsl(205,90%,50%);
+}
